@@ -5,12 +5,12 @@
 }:
 
 buildPythonPackage rec {
-  version = "2.3.3";
+  version = "3.0.1";
   pname = "WTForms";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "81195de0ac94fbc8368abbaf9197b88c4f3ffd6c2719b5bf5fc9da744f3d829c";
+    sha256 = "6b351bbb12dd58af57ffef05bc78425d08d1914e0fd68ee14143b7ade023c5bc";
   };
 
   propagatedBuildInputs = [ markupsafe ];
