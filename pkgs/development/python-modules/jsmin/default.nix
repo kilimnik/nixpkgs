@@ -2,11 +2,11 @@
 
 buildPythonPackage rec {
   pname = "jsmin";
-  version = "2.2.2";
+  version = "3.0.0";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "0fsmqbjvpxvff0984x7c0y8xmf49ax9mncz48b9xjx8wrnr9kpxn";
+    sha256 = "88fc1bd6033a47c5911dbcada7d279c7a8b7ad0841909590f6a742c20c4d2e08";
   };
 
   meta = with lib; {
