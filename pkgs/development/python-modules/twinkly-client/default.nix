@@ -7,12 +7,12 @@
 
 buildPythonPackage rec {
   pname = "twinkly-client";
-  version = "0.0.2";
+  version = "0.0.3";
   disabled = pythonOlder "3.6";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "16jbm4ya4yk2nfswza1kpgks70rmy5lpsv9dv3hdjdnr1j44hr3i";
+    sha256 = "17f37ac8c3af2c721f5ef3f247bcf73ff46587bf4ebc26ef1223700a52d22e5f";
   };
 
   propagatedBuildInputs = [ aiohttp ];
