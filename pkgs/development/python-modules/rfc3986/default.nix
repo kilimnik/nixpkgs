@@ -2,11 +2,11 @@
 
 buildPythonPackage rec {
   pname = "rfc3986";
-  version = "1.5.0";
+  version = "2.0.0";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "270aaf10d87d0d4e095063c65bf3ddbc6ee3d0b226328ce21e036f946e421835";
+    sha256 = "97aacf9dbd4bfd829baad6e6309fa6573aaf1be3f6fa735c8ab05e46cecb261c";
   };
 
   propagatedBuildInputs = [ idna ];
