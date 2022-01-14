@@ -8371,6 +8371,8 @@ in {
 
   radish-bdd = callPackage ../development/python-modules/radish-bdd { };
 
+  railroad-diagrams = callPackage ../development/python-modules/railroad-diagrams { };
+
   rainbowstream = callPackage ../development/python-modules/rainbowstream { };
 
   ramlfications = callPackage ../development/python-modules/ramlfications { };
