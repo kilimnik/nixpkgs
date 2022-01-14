@@ -18,12 +18,12 @@
 
 buildPythonPackage rec {
   pname = "google-cloud-bigquery";
-  version = "2.31.0";
+  version = "2.32.0";
   format = "setuptools";
 
   src = fetchPypi {
     inherit pname version;
-    sha256 = "ff66d7d1f64795a855784706c3baa52d18fa0cd1cc4f0a150cf74268abb53ac0";
+    sha256 = "f3863ac4293f0a4585e44461d82b91f9239721ef33fc9575d401b4da7dc127bd";
   };
 
   propagatedBuildInputs = [
