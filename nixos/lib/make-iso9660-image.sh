@@ -115,12 +115,12 @@ xorriso="xorriso
  -graft-points
  -full-iso9660-filenames
  -joliet
+ -append_partition 2 Linux part
  ${isoBootFlags}
  ${usbBootFlags}
  ${efiBootFlags}
  -r
  -path-list pathlist
- -append_partition 2 Linux part
  --sort-weight 0 /
 "
 
