@@ -115,8 +115,6 @@ xorriso="xorriso
  -graft-points
  -full-iso9660-filenames
  -joliet
- -append_partition 2 Linux part
- -appended_part_as_gpt
  ${isoBootFlags}
  ${usbBootFlags}
  ${efiBootFlags}

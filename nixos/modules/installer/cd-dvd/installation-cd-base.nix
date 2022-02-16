@@ -44,6 +44,8 @@ with lib;
           ;;
       esac
     done
+
+    mount -o remount,rw /iso
   '';
 
   system.stateVersion = mkDefault "18.03";
