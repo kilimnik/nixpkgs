@@ -107,7 +107,6 @@ dd if=/dev/zero of=part bs=4M count=1
 xorriso="xorriso
  -boot_image any gpt_disk_guid=$(uuid -v 5 daed2280-b91e-42c0-aed6-82c825ca41f3 $out | tr -d -)
  -volume_date all_file_dates =$SOURCE_DATE_EPOCH
- -append_partition 2 Linux part
  -as mkisofs
  -iso-level 3
  -volid ${volumeID}
@@ -121,6 +120,7 @@ xorriso="xorriso
  ${efiBootFlags}
  -r
  -path-list pathlist
+ -append_partition 2 Linux part
  --sort-weight 0 /
 "
 
