@@ -98,6 +98,7 @@ for ((n = 0; n < ${#objects[*]}; n++)); do
 done
 
 mkdir -p $out/iso
+dd if=/dev/zero of=part bs=4M count=1
 
 # daed2280-b91e-42c0-aed6-82c825ca41f3 is an arbitrary namespace, to prevent
 # independent applications from generating the same UUID for the same value.
@@ -106,7 +107,7 @@ mkdir -p $out/iso
 xorriso="xorriso
  -boot_image any gpt_disk_guid=$(uuid -v 5 daed2280-b91e-42c0-aed6-82c825ca41f3 $out | tr -d -)
  -volume_date all_file_dates =$SOURCE_DATE_EPOCH
- -append_partition 2 Linux
+ -append_partition 2 Linux part
  -as mkisofs
  -iso-level 3
  -volid ${volumeID}
