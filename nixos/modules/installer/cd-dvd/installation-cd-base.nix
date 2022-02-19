@@ -25,7 +25,7 @@ with lib;
   isoImage.makeEfiBootable = true;
 
   # USB booting
-  isoImage.makeUsbBootable = true;
+  # isoImage.makeUsbBootable = true;
 
   # Add Memtest86+ to the CD.
   boot.loader.grub.memtest86.enable = true;
@@ -44,8 +44,6 @@ with lib;
           ;;
       esac
     done
-
-    mount -o remount,rw /iso
   '';
 
   system.stateVersion = mkDefault "18.03";

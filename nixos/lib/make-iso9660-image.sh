@@ -98,7 +98,6 @@ for ((n = 0; n < ${#objects[*]}; n++)); do
 done
 
 mkdir -p $out/iso
-dd if=/dev/zero of=part bs=4M count=1
 
 # daed2280-b91e-42c0-aed6-82c825ca41f3 is an arbitrary namespace, to prevent
 # independent applications from generating the same UUID for the same value.
