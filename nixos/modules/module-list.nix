@@ -1232,6 +1232,7 @@
   ./services/security/intune.nix
   ./services/security/jitterentropy-rngd.nix
   ./services/security/kanidm.nix
+  ./services/security/lk-jwt-service.nix
   ./services/security/munge.nix
   ./services/security/nginx-sso.nix
   ./services/security/oauth2_proxy.nix
@@ -1285,6 +1286,7 @@
   ./services/video/epgstation/default.nix
   ./services/video/go2rtc/default.nix
   ./services/video/frigate.nix
+  ./services/video/livekit.nix
   ./services/video/mirakurun.nix
   ./services/video/photonvision.nix
   ./services/video/replay-sorcery.nix
@@ -1315,6 +1317,7 @@
   ./services/web-apps/documize.nix
   ./services/web-apps/dokuwiki.nix
   ./services/web-apps/dolibarr.nix
+  ./services/web-apps/element-call.nix
   ./services/web-apps/engelsystem.nix
   ./services/web-apps/ethercalc.nix
   ./services/web-apps/fluidd.nix
